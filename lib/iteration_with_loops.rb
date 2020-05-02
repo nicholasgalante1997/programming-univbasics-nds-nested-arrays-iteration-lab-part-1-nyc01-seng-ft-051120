@@ -7,6 +7,7 @@ def find_even_values(src)
      if src[count][inner_count] % 2 == 0 
        even_numbers << src[count][inner_count]
      else 
+       find_even_values(src)
      end 
      inner_count += 1 
    end
